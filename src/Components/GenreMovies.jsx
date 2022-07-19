@@ -22,6 +22,16 @@ const GenreMovies = () => {
   useEffect(() => {
     loadGenreMovies();
   }, [genre]);
+
+  const handleRatingColor = (rating) => {
+    if (rating > 8) {
+      return "#3CCF4E";
+    } else if (rating >= 7) {
+      return "#519259";
+    } else if (rating >= 5) {
+      return "#EF5B0C";
+    }
+  };
   return (
     <>
       <div className=" pb-10 ml-1  my-4  grid  grid-flow-row md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-4 2xl:grid-cols-4 2xl:gap-4 grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 ">
@@ -46,7 +56,12 @@ const GenreMovies = () => {
                     {movie.name}
                   </h1>
 
-                  <h1 className="text-black pr-3">{movie.rating}</h1>
+                  <h1
+                    style={{ color: handleRatingColor(movie.rating) }}
+                    className="text-black pr-3"
+                  >
+                    {movie.rating}
+                  </h1>
                 </div>
               </div>
               {/* <div
