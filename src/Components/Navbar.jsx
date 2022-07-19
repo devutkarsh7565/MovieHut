@@ -73,21 +73,21 @@ export function Navbar() {
             </div>
           </div>
         </div>
-        <div className="-mr-2 flex md:hidden">
+        <div className=" flex md:hidden">
           <div className="mx-3">
             <SearchBox />
           </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="inline-flex items-center justify-center px-4 rounded-md text-gray-800"
+            className="inline-flex items-center justify-center mr-2 rounded-md text-gray-800"
             aria-controls="mobile-menu"
             aria-expanded="false"
           >
             <span className="sr-only">Open main menu</span>
             {!isOpen ? (
               <svg
-                className="block h-10 w-10"
+                className="block h-10 w-10 "
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
