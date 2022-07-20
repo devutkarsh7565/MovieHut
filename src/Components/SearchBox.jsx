@@ -38,7 +38,7 @@ const SearchBox = () => {
     <>
       <form onSubmit={handleSubmit}>
         <input
-          className="py-2 px-3 font-medium border-slate-200 border-2 outline-none focus:shadow-lg w-32 sm:w-28  sm:focus:w-60 duration-300 focus:border-slate-300 rounded-xl"
+          className="py-2 px-3 font-medium border-slate-200 border-2 outline-none focus:shadow-lg w-32 sm:w-28 md:focus:w-32 lg:focus:w-60 duration-300 focus:border-slate-300 rounded-xl"
           type="text"
           placeholder="Search"
           value={query}

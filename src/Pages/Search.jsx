@@ -16,13 +16,13 @@ export function Search() {
   const outlet = useOutlet();
   if (outlet)
     return (
-      <div className="w-full h-full flex justify-center">
+      <div className="w-full h-full flex justify-center mt-20">
         <Outlet />
       </div>
     );
   return (
     <>
-      <div className="flex flex-col justify-start items-center">
+      <div className="flex flex-col justify-start items-center mt-20">
         <div className="mt-10">
           <p className="text-[#413F42] sm:text-3xl text-2xl font-Raleways font-medium ">
             Search above to get results
