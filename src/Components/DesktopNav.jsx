@@ -53,14 +53,13 @@ const DesktopNav = () => {
                 >
                   HOME
                 </Link>
-                <span className="mx-2" />
+
                 <Link
                   className="font-Raleway font-semibold  py-3 mx-2 lg:mx-4 text-[#3d3d3d]  rounded-2xl duration-500 "
                   to="/search"
                 >
                   SEARCH
                 </Link>
-                <span className="mx-2" />
 
                 <Link
                   className="font-Raleway font-semibold py-3 mx-2 lg:mx-4 text-[#3d3d3d]  rounded-2xl duration-500 "

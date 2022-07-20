@@ -16,8 +16,10 @@ const Login = () => {
   };
   return (
     <>
-      <p>signIn with google to continue</p>
-      <button onClick={signUpWithGoogle}>signIn with google</button>
+      <div className="w-full flex flex-col justify-center items-center min-h-screen">
+        <p>signIn with google to continue</p>
+        <button onClick={signUpWithGoogle}>signIn with google</button>
+      </div>
     </>
   );
 };

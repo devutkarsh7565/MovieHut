@@ -7,7 +7,7 @@ export function Genre() {
   return (
     <GenreProvider>
       {" "}
-      <div className="">
+      <div className="mt-20">
         <GenreResults />
       </div>
     </GenreProvider>
