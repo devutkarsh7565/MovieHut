@@ -54,7 +54,7 @@ export function NewReleasedMovies() {
   };
   return (
     <>
-      <div className="w-full flex flex-col h-[24rem] md:h-[25rem] sm:h-[24rem] justify-start mt-5 ">
+      <div className="w-full flex flex-col h-[24rem] md:h-[25rem] sm:h-[24rem] justify-start mt-20 ">
         <h1 className=" font-poppins md:text-3xl text-2xl mx-2 my-2 py-2">
           New Realeased Movies
         </h1>{" "}
