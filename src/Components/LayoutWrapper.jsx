@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import FavouriteProvider from "../Providers/FavouriteProvider";
+import MobileNav from "./MobileNav";
 import { Navbar } from "./Navbar";
 
 export function LayoutWrapper() {
@@ -9,6 +10,7 @@ export function LayoutWrapper() {
         <FavouriteProvider>
           <Navbar />
           <Outlet />
+          <MobileNav className="flex justify-end" />
         </FavouriteProvider>
       </div>
     </div>
