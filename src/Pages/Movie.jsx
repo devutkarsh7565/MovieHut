@@ -51,7 +51,7 @@ export function Movie() {
 
   return (
     <>
-      <div className=" w-full min-h-screen xl:mt-20 ">
+      <div className=" w-full min-h-screen xl:mt-20 mt-16 md:mt-0 ">
         <div className="w-full min-h-screen   ">
           <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-1 gap-y-1">
