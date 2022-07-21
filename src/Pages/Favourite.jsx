@@ -17,10 +17,7 @@ const Favourite = () => {
     <>
       <div className="pt-28 pb-10 grid w-screen grid-flow-row md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-5 2xl:grid-cols-5 2xl:gap-5 grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 ">
         {favourite?.map((movie, index) => (
-          <div
-            onClick={() => navigateMovieDetail(movie.movieId)}
-            className="mx-5 my-5"
-          >
+          <div className="mx-5 my-5">
             <div className="w-full h-[555px] rounded-xl top-0 left-0 transition ease-in-out delay-150 bg-[#1F4690] translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 hover:bg-[#293462] duration-300 ...">
               <img
                 className="w-full h-[450px] rounded-t-xl"
@@ -35,9 +32,15 @@ const Favourite = () => {
 
                   <h1 className="text-white pr-3">{movie.movieRating}</h1>
                 </div>
+                <div
+                  onClick={() => navigateMovieDetail(movie.movieId)}
+                  className="flex justify-center items-center bg-[#FFA500] rounded-xl mx-5 text-[#1F4690] text-sm py-2 mt-2 "
+                >
+                  click here to know more
+                </div>
               </div>
               <div
-                onClick={() => removeFavouriteMovies(index)}
+                onClick={() => removeFavouriteMovies(movie.movieId)}
                 className="absolute bg-[#21201E] top-0 opacity-0  transition ease-linear delay-100 hover:opacity-75 text-center sm:text-xl text-sm sm:p-5 p-2 w-full z-20"
               >
                 <RemoveFavourites />
