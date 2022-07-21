@@ -1,14 +1,7 @@
-import {
-  getDocs,
-  addDoc,
-  collection,
-  doc,
-  setDoc,
-  deleteDoc,
-} from "firebase/firestore";
+import { getDocs, addDoc, collection, doc, setDoc } from "firebase/firestore";
 import { useContext } from "react";
 import { FavouriteContext } from "../Providers/FavouriteProvider";
-import { auth, db } from "./firebase";
+import { auth, db } from "./firebaseConfig";
 
 const useFavourite = () => {
   const { favourite, setFavourite } = useContext(FavouriteContext);
@@ -41,19 +34,15 @@ const useFavourite = () => {
     );
     querySnapshot.forEach((doc) => {
       favList.push(doc.data());
-      // console.log(doc.id, " => ", doc.data());
+      console.log(doc.id, " => ", doc.data());
     });
     setFavourite(favList);
   };
   // const updateFavoriteList = [...favourite, doc.data()];
   // setFavourite(doc.data());
-  const removeFavouriteMovies = async (movieId) => {
-    // const newFavouriteList = favourite.filter((favouritee, id) => id !== index);
-    // setFavourite(newFavouriteList);
-    // await deleteDoc(
-    //   doc(db, "users", auth.currentUser.uid, "favourites", movieId)
-    // );
-    // console.log("deleted");
+  const removeFavouriteMovies = (index) => {
+    const newFavouriteList = favourite.filter((favouritee, id) => id !== index);
+    setFavourite(newFavouriteList);
   };
 
   return {
