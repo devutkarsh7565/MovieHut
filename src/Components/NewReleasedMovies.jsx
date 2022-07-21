@@ -60,13 +60,13 @@ export function NewReleasedMovies() {
         </h1>{" "}
         <div
           id="slider"
-          className="theatre-scroll max-w-6xl h-[21rem] sm:h-[23rem] overflow-x-scroll scroll-smooth   flex justify-start items-start"
+          className="theatre-scroll max-w-6xl h-[22rem] sm:h-[23rem] overflow-x-scroll scroll-smooth   flex justify-start items-start"
         >
           {releasedMovieCards?.map((movie) => (
             <>
               <div
                 onClick={() => userReleasednavigate(movie.id)}
-                className="md:w-[11rem] md:h-[19rem]  sm:w-[9rem] sm:h-[17rem]  w-[9rem] h-[17.6rem] ml-4  cursor-pointer   flex flex-col items-start justify-start"
+                className="md:w-[11rem] md:h-[19rem]  sm:w-[9rem] sm:h-[17rem]  w-[9rem] h-[17rem] ml-4  cursor-pointer   flex flex-col items-start justify-start"
               >
                 <div className="shadow-lg shadow-gray-400 ">
                   <img
@@ -75,7 +75,7 @@ export function NewReleasedMovies() {
                     alt="movie"
                   />
                 </div>
-                <div className="w-full h-full flex justify-between items-center mt-2 p-2 ">
+                <div className="w-full sm:h-[3.8rem] flex justify-between items-center mt-2 p-2 ">
                   <p className="text-sm font-normal w-[40rem] whitespace-pre-wrap leading-tight">
                     {movie.name}
                   </p>
