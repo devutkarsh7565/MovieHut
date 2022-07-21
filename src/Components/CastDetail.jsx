@@ -45,7 +45,7 @@ const CastDetail = () => {
   }
   return (
     <>
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-1 gap-y-1 mx-5 py-8">
+      <div className=" mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-1 gap-y-1 mx-5 py-8">
         <div className="w-120 md:h-[840px]  flex md:flex-col  justify-between  col-span-2 md:col-span-1 md:row-span-3 row-span-2  ">
           <img
             className="  lg:w-[240px] lg:h-[355px] md:w-[250px] md:h-[370px] sm:w-[220px] sm:h-[300px] w-[180px] h-[210px] rounded-t-xl shadow-xl md:mt-8  "

@@ -28,18 +28,18 @@ export function SimilarMovie({ movie }) {
   }, [movie]);
   return (
     <>
-      <div className="flex flex-col justify-start ">
+      <div className="flex flex-col justify-start   ">
         <div className="font-large text-3xl mt-10">
-          <h1 className="">Similar Movies</h1>
+          <h1 className="mx-3">Similar Movies</h1>
         </div>
-        <div className="flex justify-start flex-wrap mt-6 ">
+        <div className="flex justify-center flex-wrap mt-4 ">
           {slice?.map((cast) => (
             <Link to={`/movie/${cast.id}`}>
               {" "}
               <div className="mx-5 my-3">
-                <div className="md:w-[14rem] md:h-[22rem] w-[7.5rem] h-[9rem] rounded-xl top-0 left-0 transition ease-in-out delay-150 bg-white translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 hover:bg-gray-100 duration-300 ...">
+                <div className="md:w-[14rem] md:h-[22rem] w-[8rem] h-[13rem]  top-0 left-0 transition ease-in-out delay-150 bg-white translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 hover:bg-gray-100 duration-300 ...">
                   <img
-                    className="w-full md:h-[18rem] h-[7rem]  rounded-t-xl
+                    className="w-full md:h-[18rem] h-[9rem] 
                   "
                     src={cast.poster_url}
                     alt="movie"

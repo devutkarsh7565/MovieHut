@@ -22,7 +22,7 @@ export function CastList({ movie }) {
     <>
       <div className="flex flex-col justify-start ">
         <div className="font-large text-3xl mt-10 ">
-          <h1 className="">Top Billed Cast</h1>
+          <h1 className="mx-3">Top Billed Cast</h1>
         </div>
         <div className="relative flex items-center mt-6 ">
           <MdChevronLeft size={40} />
@@ -33,10 +33,10 @@ export function CastList({ movie }) {
             {castList.map((cast) => (
               <>
                 <Link to={`/castdetail/${cast.id}`}>
-                  <div className="md:w-[220px] md:h-[370px] w-[130px] h-[220px] rounded-xl inline-block  cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white mr-4 mb-4 shadow-xl">
+                  <div className="md:w-[220px] md:h-[370px] w-[130px] h-[15rempx]  inline-block border border-black  cursor-pointer hover:scale-105 ease-in-out duration-300 bg-white mr-4 mb-4 shadow-xl">
                     {" "}
                     <img
-                      className="md:w-[220px] md:h-[295px] w-[130px] h-[165px] rounded-t-xl inline-block 
+                      className="md:w-[220px] md:h-[295px] w-[130px] h-[165px]  inline-block 
                   "
                       src={cast.profile_path}
                       alt="movie"

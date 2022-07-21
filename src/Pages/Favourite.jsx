@@ -15,7 +15,7 @@ const Favourite = () => {
 
   return (
     <>
-      <div className="pt-28 pb-10 grid w-screen grid-flow-row md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-5 2xl:grid-cols-5 2xl:gap-5 grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 ">
+      <div className="pt-28 pb-10 grid min-h-screen w-screen grid-flow-row md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-5 2xl:grid-cols-5 2xl:gap-5 grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 ">
         {favourite?.map((movie, index) => (
           <div className="mx-5 my-5">
             <div className="w-full h-[555px] rounded-xl top-0 left-0 transition ease-in-out delay-150 bg-[#1F4690] translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 hover:bg-[#293462] duration-300 ...">
