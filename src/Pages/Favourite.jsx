@@ -16,6 +16,7 @@ const Favourite = () => {
   return (
     <>
 
+
       <div className="mt-20 pt-12 h-full  w-full sm:flex justify-start flex-wrap ">
         <div className="flex justify-center flex-wrap">
           {favourite?.map((movie, index) => (
