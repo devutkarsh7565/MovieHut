@@ -9,7 +9,7 @@ import Lottie from "lottie-react";
 import groovyWalkAnimation from "../Images/loading.json";
 
 export function Movie() {
-  const { getFavouriteMovies } = useFavourite();
+  const { addFavouriteMovies } = useFavourite();
 
   const { movie } = useParams();
   const [movieDetail, setMovieDetail] = useState();
@@ -18,7 +18,7 @@ export function Movie() {
 
   const [color, setColor] = useState("blue");
   const favouritee = () => {
-    getFavouriteMovies(movieDetail);
+    addFavouriteMovies(movieDetail);
   };
 
   const userScore = movieDetail?.rating * 10 + 3;

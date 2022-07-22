@@ -32,6 +32,7 @@ const SearchBox = () => {
     e.preventDefault();
 
     navigate(`/search/${query}`);
+    setQuery("");
   };
 
   return (

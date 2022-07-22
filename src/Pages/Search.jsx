@@ -22,7 +22,7 @@ export function Search() {
     );
   return (
     <>
-      <div className="flex flex-col justify-start items-center mt-20">
+      <div className="flex flex-col justify-start items-center mt-20 min-h-screen">
         <div className="mt-10">
           <p className="text-[#413F42] sm:text-3xl text-2xl font-Raleways font-medium ">
             Search above to get results
