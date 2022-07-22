@@ -15,39 +15,65 @@ const Favourite = () => {
 
   return (
     <>
-      <div className="pt-28 pb-10 grid min-h-screen w-screen grid-flow-row md:grid-cols-3 md:gap-3 lg:grid-cols-3 lg:gap-4 xl:grid-cols-4 xl:gap-5 2xl:grid-cols-5 2xl:gap-5 grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 ">
-        {favourite?.map((movie, index) => (
-          <div className="mx-5 my-5">
-            <div className="w-full h-[555px] rounded-xl top-0 left-0 transition ease-in-out delay-150 bg-[#1F4690] translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 hover:bg-[#293462] duration-300 ...">
+      <div className="mt-20 pt-12 h-full  w-full sm:flex justify-start flex-wrap ">
+        <div className="flex justify-center flex-wrap">
+          {favourite?.map((movie, index) => (
+            <div className="md:w-[12.5rem] md:h-[24rem] w-[9rem] h-[21rem] flex flex-col justify-start  top-0 left-0 transition ease-in-out delay-150 bg-slate-200 translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 mx-3 my-3 duration-300 ...">
+              {/* <img
+              className="w-full h-[17rem] rounded-t-xl"
+              src={movie.moviePoster}
+              alt="movie"
+            />
+            <div className="flex flex-col justify-start h-[3rem]  text-white mb-5">
+              <div className="flex justify-between pt-4">
+                <h1 className="text-white pl-3 text-sm leading-tight ">
+                  {movie.movieName}
+                </h1>
+
+                <h1 className="text-white pr-3">{movie.movieRating}</h1>
+              </div>
+              <div
+                onClick={() => navigateMovieDetail(movie.movieId)}
+                className="flex justify-center items-center bg-[#FFA500] rounded-xl mx-5 text-[#1F4690] text-sm py-2 mt-2 "
+              >
+                click here to know more
+              </div>
+            </div>
+            <div
+              onClick={() => removeFavouriteMovies(movie.id)}
+              className="absolute bg-[#21201E] top-0 opacity-0  transition ease-linear delay-100 hover:opacity-75 text-center sm:text-xl text-sm sm:p-5 p-2 w-full z-20"
+            >
+              <RemoveFavourites />
+            </div> */}
               <img
-                className="w-full h-[450px] rounded-t-xl"
+                className="w-full md:h-[17rem] h-[14rem] "
                 src={movie.moviePoster}
                 alt="movie"
               />
-              <div className="flex flex-col justify-around  text-white mb-5">
-                <div className="flex justify-between pt-4">
-                  <h1 className="text-white pl-3 text-sm leading-tight ">
-                    {movie.movieName}
-                  </h1>
+              <div className="flex justify-between md:h-[4.5rem] w-full h-[4rem] items-center">
+                <h1 className=" pl-3 md:text-sm text-xs leading-tight ">
+                  {movie.movieName}
+                </h1>
 
-                  <h1 className="text-white pr-3">{movie.movieRating}</h1>
-                </div>
-                <div
-                  onClick={() => navigateMovieDetail(movie.movieId)}
-                  className="flex justify-center items-center bg-[#FFA500] rounded-xl mx-5 text-[#1F4690] text-sm py-2 mt-2 "
-                >
-                  click here to know more
-                </div>
+                <h1 className=" pr-3 md:text-base text-sm">
+                  {movie.movieRating}
+                </h1>
               </div>
               <div
-                onClick={() => removeFavouriteMovies(movie.movieId)}
-                className="absolute bg-[#21201E] top-0 opacity-0  transition ease-linear delay-100 hover:opacity-75 text-center sm:text-xl text-sm sm:p-5 p-2 w-full z-20"
+                onClick={() => navigateMovieDetail(movie.movieId)}
+                className="flex justify-center md:h-[1.5rem] h-[2rem] items-center bg-[#FFA500]  mx-2  text-[#1F4690] px-2  leading-tight   "
+              >
+                <h1 className="text-xs">click here to know more</h1>
+              </div>
+              <div
+                onClick={() => removeFavouriteMovies(movie.id)}
+                className="absolute bg-[#21201E] top-0 opacity-0  transition ease-linear delay-100 hover:opacity-75 text-center sm:text-base text-sm sm:p-3 p-2 w-full z-20"
               >
                 <RemoveFavourites />
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

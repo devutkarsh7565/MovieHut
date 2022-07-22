@@ -14,15 +14,14 @@ const appId = process.env.REACT_APP_APP_ID;
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 console.log(apiKey);
 const firebaseConfig = {
-  apiKey,
-  authDomain: "moviehut-7d251.firebaseapp.com",
-  projectId: "moviehut-7d251",
-  storageBucket: "moviehut-7d251.appspot.com",
-  messagingSenderId: "265151157247",
-  appId,
-  measurementId: "G-WGDK50C19S",
+  apiKey: "AIzaSyC4RTrfT5qnPPefpuvl3X_3UoHCna2CR5Y",
+  authDomain: "moviehut-c36e6.firebaseapp.com",
+  projectId: "moviehut-c36e6",
+  storageBucket: "moviehut-c36e6.appspot.com",
+  messagingSenderId: "162384839869",
+  appId: "1:162384839869:web:a89eb381bfdfeb3e3323d4",
+  measurementId: "G-JYB8S05PJH",
 };
-
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
