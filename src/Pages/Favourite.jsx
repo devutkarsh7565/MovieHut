@@ -15,10 +15,16 @@ const Favourite = () => {
 
   return (
     <>
-      <div className="mt-20 pt-12 min-h-screen  w-full sm:flex justify-start flex-wrap ">
-        <div className="flex justify-center flex-wrap h-fit">
+
+
+      <div className="mt-20 pt-12 h-full  w-full sm:flex justify-start flex-wrap ">
+        <div className="flex justify-center flex-wrap">
           {favourite?.map((movie, index) => (
             <div className="md:w-[12.5rem] md:h-[24rem] w-[9rem] h-[21rem] flex flex-col justify-start  top-0 left-0 transition ease-in-out delay-150 bg-slate-200 translate-y-0.5 sm:hover:-translate-y-1 hover:scale-110 border-gray-300 border-2 mx-3 my-3 duration-300 ...">
+             
+
+      
+
               <img
                 className="w-full md:h-[17rem] h-[14rem] "
                 src={movie.moviePoster}
